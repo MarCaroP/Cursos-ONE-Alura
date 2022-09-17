@@ -1,0 +1,2 @@
+Muestra en la pantalla el siguiente mensaje: (Quiero formar parte de EmpleaONE)
+Muestra en la pantalla el resultado de la tabla del 8

@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+.tit-principal{
+    padding-left:30px;
+    color: #CCCCCC;
+}
+
+#banner{
+    width: 100%;
+}
+.principal{
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+.tit-center{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+#mision{
+    font-size: 20px;
+}
+em strong{
+    color:rgba(52, 106, 206, 0.959);
+}
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.item{
+    font-style: italic;
+}
+.imgDiferenciales{
+    width: 50%;
+
+}

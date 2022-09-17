@@ -1,0 +1,69 @@
+Realice este curso para HTML y CSS y:
+Simplifica la creación de layouts complejos
+Posiciona elementos con mayor facilidad
+Utiliza grid para calcular y alinear elementos
+Crea templates con más eficiencia y simplicidad
+Alinea los elementos en donde tienen que posicionarse
+Determina en donde los elementos deben de empezar y terminar.
+
+_____________________________________________________________________________________________________________________
+En esta clase aprendimos:
+
+Definir una template y crear áreas.
+Definir el tamaño de las columnas.
+Establecer el tamaño de las líneas.
+Colocar los elementos en sus áreas.
+
+- Define usar el template GRID, define areas en el .app con grid-template-areas: "area1" "area2" "area3" ...;
+En cada elemento area se identifica y se coloca con grid-area: area1 dentro de cada seccion ;
+- Tamano de la linea lo define con grid-template-columns: auto (Ancho )y gird-template-row: px vh auto %(alto)
+vh= tamaño virtual height
+_____________________________________________________________________________________________________________________
+Lo que aprendimos en esta aula:
+
+Definir una template sin áreas.
+Establecer el número de columnas.
+Establecer el número de líneas.
+Especificar a los elementos dónde empezar y dónde terminar.
+Establecer el espacio entre filas y columnas.
+- crea un nuevo css y selecciona una clase del html y lo declara display: grid. le declara tamaño del ancho de las columnas, de acuerdo a la cantidad que tiene, - en este caso son 4, con el 25% -  con el grid-template-columns y el alto de cada linea con grid-template-rows. Para ocupar el 100% del espacio que tiene esa seccion especifica, usa height, con un calculo, donde le resta el 50px  al tamaño total del vh para que comience 50px mas abajo del elemento anterior.
+- con grid-column-start : se indica en que columna empieza y grid-columns-end donde finaliza, lo mismo para row. se puede abreviar utilizando grid-column : 1/2 , donde 1 es la columna start y 2 es end.
+- gap, hace el espacio entre columnas. se usa en la clase que hace referencia a toda la seccion que va a ser separada en column y rows
+ CSS con el estándar BEM
+_____________________________________________________________________________________________________________________
+Lo que aprendimos en esta aula:
+
+Que es posible tener una grid dentro de otra.
+Calcular el ancho.
+
+
+_____________________________________________________________________________________________________________________
+
+Lo que aprendimos en esta aula:
+
+Centralizar el contenido.
+Agregar bordes.
+Darle estilo al desplazamiento del mouse: se agrega acciones de mouse sobre links para que subraye al momento de pasa el mouse sobre el texto 
+    .menu__link:hover, .menu__link.activo {
+    border-bottom: 2px solid #0073e6;
+    }
+Agregar el símbolo de copyright.
+
+
+
+_____________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________
+Utilizar media queries para que el sitio sea responsivo.
+    en esa pagina se muestra el ejemplos de media queries
+    https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+Aplicar diferentes reglas a diferentes pantallas.
+    Se puede aplicar un mismo estilo dentro de los corchetes, separando las clases por comas, 
+
+    https://cssgridgarden.com/#es
+
+
+
+
+
+
+_____________________________________________________________________________________________________________________

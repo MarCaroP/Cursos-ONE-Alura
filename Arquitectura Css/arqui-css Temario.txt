@@ -1,0 +1,48 @@
+Lo que aprendimos en esta aula:
+
+Utilizar selectores CSS más sencillos;
+Organizar y estructurar los archivos css del proyecto;
+Metodología de Diseño Atómico.
+
+Repaso por los elementos del html. El diseño atomico viene de la quimica donde se ven los atomos son las etiquetas, el conjunto de etiquetas pueden formar el body y el body con el footer y otros formar la pagina que seria como el organismo.
+Para mejorar la practicidad y legibilidad se usan clases en las atiquetas
+____________________________________________________________________________________________________________________________________
+
+Lo que aprendimos en esta aula:
+
+Un estándar para nombrar clases CSS;
+Conocemos la metodología BEM.
+
+Para 
+BEM: block element modifier, tecnologia para utilizar un patron, todo se llama de acuerdo a su elemnto padre. Se estructura, 
+__________________________________________________________________
+Lo que aprendimos en esta aula:
+
+Organización y estructura de archivos .css;
+Separación de responsabilidades;
+Para crear y mantener archivos más pequeños.
+
+
+¡Alternativa correcta! Para una mejor organización y mantenimiento de los proyectos CSS, estudiamos que podemos utilizar la metodología de Atomic Desing, que consiste en crear un archivo .css para cada elemento de nuestros componentes.
+panel/cabecera.css
+panel/titulo.css
+panel/descripción.css
+panel/boton.css
+Pensando en un componente del panel con cabecera, título, descripción y botón, ¿cómo podemos organizar estos archivos?
+__________________________________________________________________
+Lo que aprendimos en esta aula:
+
+Las imágenes ilustrativas deben estar referenciadas en nuestros archivos .css;
+Mejores prácticas con la importación de imágenes;
+Mantener estilos en archivos de estilos.
+ ordenar los estilos de manera alfabetica o comenzando por el color y la fuente y seguir con lo demas 
+en los css pone     background: url("../img/banner.jpg") no-repeat center / cover ;
+ para colocar una imagen facil de modificar
+
+__________________________________________________________________
+Lo que aprendimos en esta aula:
+
+Hacer que un sitio web sea receptivo;
+Cómo configurar la adaptación del sitio a diferentes tamaños de pantalla.
+ la adaptación se logra agregnado @media screem para los diferentes tamaños de pantalla, editando los tamaños de los elementos y sus margenes o flex en columnas en lugar de filas 
+__________________________________________________________________

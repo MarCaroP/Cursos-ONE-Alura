@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<h1> Programa : Promedio edades de Familia</h1>
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+
+var edadPromedio= 0;
+var cantFamilia=parseInt(prompt("Ingrese cantidad de integrantes de la familia: "));
+var contador=1;
+var edadTotal=0;
+
+while (contador<= cantFamilia) {
+
+    var edad= parseInt(prompt("Ingrese la edad del familiar: "));
+    edadTotal=edadTotal+edad;
+    contador++;
+    
+}
+edadPromedio= edadTotal/cantFamilia;
+
+imprimir("La media de las edades de la familia es: "+ edadPromedio);
+
+imprimir("FIN");
+
+
+
+</script>

@@ -1,0 +1,102 @@
+Lo que aprendimos en esta aula:
+
+-> Accesibilidad es una práctica inclusiva de garantizar que personas con discapacidad puedan utilizar diversos servicios.
+
+-> La “Convención sobre los derechos de las personas con discapacidad” de la ONU entiende que la accesibilidad de sistemas y tecnologías de la información llevan en cuenta las etapas del diseño, el desarrollo, la producción y la distribución.
+
+-> Que la “Introducción a las Pautas de Accesibilidad para el Contenido Web” (WCAG) es un estándar internacional que trata sobre las especificaciones técnicas, pautas, técnicas y recursos que describen soluciones de accesibilidad, un marco para la accesibilidad web.
+
+Y sobre los nueve tipos de discapacidades, que son:
+
+Discapacidad física o motriz;
+Discapacidad orgánica o visceral;
+Discapacidad sensorial;
+Visual;
+Auditiva;
+Verbal;
+Discapacidad mental;
+Discapacidad intelectual;
+Discapacidad psicosocial.
+
+http://www.codexexempla.org/traducciones/pautas-accesibilidad-contenido-web-2.0.htm
+https://www.w3.org/TR/WCAG20/
+
+
+__________________________________________________________________________________________________
+
+Lo que aprendimos en esta aula:
+
+Algunas características sobre el autismo para hacer que nuestro diseño web sea más inclusivo.
+
+Por eso, debemos hacer algunas modificaciones en nuestro proyecto, tales como:
+
+Evitar figuras de lenguaje;
+Tener en cuenta un contraste de colores más suaves;
+Textos más cortos, o sea, con tamaños más breves;
+Adoptar patrones de espaciado, de diagramación y el formato de los enlaces y botones;
+Pensar en elementos de la interfaz de usuario (UI) más intuitivos con buen diseño de interacción (affordance).
+
+Figma: https://www.figma.com
+
+Adobe Color: https://color.adobe.com/es/create
+
+Appy Autism: http://www.appyautism.com
+
+Tabla de colores	
+amarillo	#FFC231
+azul	#408DFF
+rojo	#E0362B
+verde	#65FF75
+lila	#A454DB
+
+Pginas para buscar iconos 
+
+
+https://www.iconfinder.com/
+
+https://www.flaticon.es/
+
+https://thenounproject.com/
+
+Si has perdido algún contenido, haga ese paso a paso de los bloques de texto abajo de la pantalla principal de Apeperia y en “Destacados”:
+
+Quitar algunas imágenes de la pantalla principal y sustituir por términos más coherentes;
+Cambiar las metáforas y las expresiones idiomáticas;
+Espaciado entre las líneas;
+Espaciado entre los párrafos;
+Aumentar el tamaño de la fuente;
+Insertar una iconografía apropiada que ilustra el sentido del texto;
+Dividir los tres párrafos en tres columnas;
+Adoptar un patrón para los botones;
+Cambiar los micro textos de órdenes para explicitar una acción al usuario (usabilidad);
+Adoptar un patrón de diagramación menos compleja.
+La comprensión de los textos y la diagramación más intuitiva ayuda a las personas autistas y neurotípicas.
+
+
+__________________________________________________________________________________________________________________
+Lo que aprendimos en esta aula:
+
+La diferencia entre personas sordas y con pérdidas de audición y conocimos las lenguas de señas que poseen variaciones regionales e idiomáticas.
+
+Por eso, las modificaciones en nuestro proyecto de Apeperia fue importante, como:
+
+Muchos textos fueron eliminados porque pueden confundir o excluir personas sordas que no tengan la lengua española como primera lengua;
+Insertar ilustraciones para dejar nuestro sitio web más visual;
+Pensar en otras formas de contacto, no sólo el teléfono, pero también el correo electrónico, una forma de enviar mensajes dentro de nuestro sitio web y las redes sociales que tengamos presencia digital;
+Vídeos institucionales o promocionales deben tener subtítulos para personas sordas o con pérdidas de audición (mejor que haya una transcripción hecha por algún responsable en la empresa);
+Botones con patrón para consistencia visual.
+
+
+_______________________________________________________
+
+https://contrastchecker.com/
+
+
+https://i0.wp.com/lavozcasilda.com.ar/wp-content/uploads/2019/02/sordos.jpg?fit=378%2C288
+
+_____________________________________________________________________________________________________
+
+
+
+
+_______________________________________________________________________________________

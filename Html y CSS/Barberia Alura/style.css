@@ -1,0 +1,233 @@
+body{
+    font-family: 'Courgette', cursive;
+}
+header{
+    background: url(imagenes/bg.jpg);
+    padding: 20px auto;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #c78c19;
+}
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li:hover{
+    border-color: #c78c19;
+    font-size: 33px;
+}
+.productos li:active{
+    border-color: #BBB;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.3%;
+    padding: 3px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 20px;
+
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.productos li:hover h2{
+    font-size: 33px;
+}
+.prod-desc{
+    font-size: 18px;
+}
+.prod-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+.copyright{
+    color: #fff;
+    font-size: 15px;
+    margin: 20px;
+}
+.main-cont{
+    width: 940px;
+    margin: 0 auto;
+}
+.main-home{
+    background: linear-gradient(#2e2e2e, #fefefe);
+   
+}
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    border-radius: 5px;
+    border-style: double;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #442f5f;
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: #593a83;
+    transform: scale(1.1);
+}
+
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: #555;
+    color: #fff;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+
+/*css para home*/
+.banner{
+    width: 100%;
+}
+.principal{
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+.tit-pp{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.tit-pp::first-letter{
+    font-weight: bold;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utensillos{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em 0;
+
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.mapa-cont{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+}
+.contenido-diff{
+    width: 50%;
+    margin: 0 auto;
+}
+.lista-diff{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.item{
+    line-height: 1.5;
+}
+.item:first-child{
+    font-weight: bold;
+}
+.item::before{
+    content: "✯";
+}
+.imgDiferenciales{
+    width: 60%;
+    transition: 400ms;
+    
+}
+.imgDiferenciales:hover{
+    opacity: 30%;
+   
+}
+.video{
+    width: 560px;
+    margin: 1em auto;
+    box-shadow: 10px 10px 30px 10px #000000;
+}
+@media screen and (max-width: 480px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-cont, .contenido-diff, .video, .productos, .productos li, .main-cont{
+        width: auto;
+    }
+    .imgDiferenciales, .lista-diff{
+        width: 100%;
+    }
+    
+}

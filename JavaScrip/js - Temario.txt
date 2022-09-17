@@ -1,0 +1,35 @@
+Funciones en javaScript
+
+Existen varios tipos de funciones, todas con propósitos diferentes, a continuación aprenderemos más sobre las siguientes funciones:
+
+1 Función estándar;
+2 Funciones de Flecha (Arrow Functions);
+3 Funciones dentro de eventos y métodos de array.
+
+1. se inicia usando la palabra clave function, el nombre de la funcion y el o los parametros, y dentro, el codigo necesario para la funcionalidad y La palabra clave return define el valor devuelto por una función. Cuando no se especifica ningún valor, se devolverá undefined. Además, return también interrumpe la ejecución de la función actual.
+ej:
+function suma (a, b){
+	return a+b;
+}
+
+
+2. Funciones de Flecha (Arrow Functions)
+las funciones de flecha son casi siempre funciones anónimas y buscan simplificar la ejecución, utilizadas por métodos de array facilitando retornos simples. después de la flecha =>, se asumirá que todo es retorno.
+const suma (a, b)=>{
+	a + b;
+}
+3. Funciones dentro de Eventos con Arrow Functions y Métodos de array
+
+Como mencionamos, las funciones de flecha se utilizan mucho para eventos y para simplificar las ejecuciones. En el ejemplo anterior empezamos capturando un elemento existente en HTML y utilizamos el querySelector para usarlo como una variable en JavaScript, más información clic aqui.
+
+A continuación, utilizamos nuestra variable que contiene el selector button para disparar un evento (addEventListener) que ejecutará una acción de click. Un ejemplo clásico que nos ayuda mucho a entender la lógica, después del argumento 'click', que será el tipo de nuestro evento, tenemos una coma para separarlos (igual que separamos los parámetros de las funciones estándar).
+
+Un conjunto de paréntesis vacíos que representan exactamente una función anónima que realizará la acción de mostrar en la consola el mensaje de que el botón ha sido clicado. De esta manera tenemos una ejecución completa sin necesidad de una función externa que ayude en esta ejecución y que puede ser utilizada de muchas maneras diferentes.
+Siguiendo con el ejemplo arriba, empezamos declarando un array de nombres que usaremos en la siguiente función que ejecutará el método forEach. Que de manera sencilla, realiza un bucle (como el bucle for o while) para pasar por cada elemento del array de nombres, aprende más haciendo clic aquí.
+
+Para esto declaramos primero el array que será recorrido, el método forEach y ejecutamos nuestra función de flecha. Ahora diciendo que el parámetro element pasará de manera directa por cada elemento del array y con retorno directo ejecutará la tarea de imprimir en la consola, cada uno de los nombres, teniendo un resultado como el que se demuestra.
+
+Ambas funciones pueden asociarse para ejecutar un evento que genere una acción para el usuario y el conocimiento de los distintos tipos de funciones le dará un mayor control sobre su gestión de los comandos que se ejecutarán dentro de JavaScript.
+
+Ahora conoces con más detalle no sólo los distintos tipos de funciones sino también como JavaScript interpreta cada una de ellas y las ejecuta parcialmente según sus instrucciones. No dejes de consultar otros artículos para aprender mucho más sobre JavaScript y sobre otros temas relacionados con la programación.
+

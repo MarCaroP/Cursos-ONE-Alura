@@ -1,0 +1,49 @@
+***Lo que aprendimos en esta aula:
+HEADER
+
+- A Instalar flexbox en nuestro código || crea un archivo flexbox.css
+-  display:flex || es para que el conteiner se comporte de manera flex, 2 elementos aliniados uno al lado del otro
+- Las propiedades align-items y justify-content ||align es para aliniar verticalmente del conteiner y  justify es para dar espacio entre elementos 
+ * a la barra de navegacion le agrega la propiedad display: flex para que los elementos se alinien de manera horizontal. 
+- Lista de navegadores en los cuales podemos utilizar flexbox|| caniuse.com 
+
+
+****Lo que aprendimos en esta aula:
+FOOTER
+- Propiedad width para aumentar el espacio de nuestro elemento || usuamos porcentajes para ocupar el 100% del conteiner, distribuyendo los elementos y usando un margen entre ellos para completar el conteiner 
+- El space-around || se usa cuando necesitamos espacio delante, despues del elemento
+- Propiedad flex-direction || se usar para que los elementos se pongan en otra direccion, distinta de un lado al otro. puede ser columns o row entre otras
+- Propiedad height para setear la altura de nuestro elemento || limita las columnas a un tamaño especificio
+- Propiedad flex-wrap || quiebra y sigue a la columna siguiente, se completa hasta los pixeles indicados y sigue, se usa para listar. 
+JUSTIFY-CONTENT 
+ Podemos distribuir los elementos dentro del padre de varias maneras, podemos por ejemplo:
+ Poner todo el espacio a la izquierda, lanzando el contenido a la derecha con justify-content: flex-end.
+ Poner todo el espacio a la derecha, lanzando el contenido a la izquierda con justify-content: flex-start (que es el modelo).
+ Poner todo el espacio a la izquierda y a la derecha, lanzando el contenido al centro con justify-content: center.
+ Poner todo el espacio entre los elementos como vimos antes con justify-content: space-between.
+ Y una posibilidad muy interesante es también poner espacio alrededor de los elementos. Para ello podemos utilizarjustify-content: space-around.
+
+***Lo que aprendimos en esta aula:
+
+ width || se utiliza para ponerle ancho al elemento y que cada elemento ocupe un tamaño porcentual, con un porcentaje de margen, para completar el 100% de nuesta pagina
+
+***Lo que aprendimos en esta aula:
+
+A utilizar los Dev Tools en el navegador
+A implementar un código Mobile o responsivo || se le indica con @media (max-width: 768px), que apartir de ese ancho de pantalla los elementos de la pagina deben acomodarse de otra manera, siguiendo otros estilos, del mismo flex planteado anteriormente.
+ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+ Lo que aprendimos en esta aula:
+
+Herramientas para practicar nuestro conocimiento en flexbox
+ https://flexboxfroggy.com/#es
+ http://www.flexboxdefense.com/
+
+ La propiedad flex-basis sirve para definir una anchura o altura para el flex item. Se el flex container tiene flex-direction: column, el flex-basis en el flex item servirá para definir una height. En este caso el flex-direction: row funciona como un width.
+
+  Podemos usar la propiedad flex. El orden de los valores es: flex-grow, flex-shrink, flex-basis.
+https://www.aluracursos.com/blog/flexbox-css-guia-completo-elementos-y-ejemplos
+
+  
+
+

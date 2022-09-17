@@ -1,0 +1,109 @@
+** para trabajar con el powershell, navegamos en el directorio hasta llegar a la carpeta del projecto y ejecutamos el comando node index.js
+
+https://ljcl79.medium.com/las-clases-abstractas-qu%C3%A9-son-y-para-qu%C3%A9-sirven-8328b92db680
+--------------------------------------------------
+
+Lo que aprendimos en esta aula:
+
+Recordamos los conceptos de la Orientación a objetos: Clases, métodos y atributos/propiedades
+Buenas prácticas a la hora de declarar atributos.
+Declarar los atributos privados en la medida de lo posible
+Problemas relacionados a la repetición de código
+
+clase es un molde para un objeto. 
+Crear un constructor, generalizar en una classe para el objeto, uno de los problemas es repetir codigo, para clases u objetos que tienen los mismos atributos. si bien se gana generalidad, se puede agregar atributos particulares en el caso de que el objeto lo requiera
+__________________________________________________________
+Lo que aprendimos en esta aula:
+
+Especialización del código en clases
+Herencia de atributos/propiedades y métodos
+Sobreescritura de métodos
+Compartiendo el código de forma segura.
+Evitar código duplicado usando el concepto de herencia.
+Palabra reservada super
+Métodos y atributos privados y protegidos.
+
+Herencia, se transfieren atributos 
+class Autobus extends Vehiculo
+
+Correcto. De esta forma la clase Autobus hereda las propiedades y métodos de la clase Vehiculo
+Super se utiliza para heredar o la clase padre un metodo y utilizarlo o sobreescribirlo. 
+Para hacer un metodo privado poner un _ delante del nombre del metodo
+https://ljcl79.medium.com/herencia-en-programaci%C3%B3n-orientada-a-objetos-370cf3f97402
+
+__________________________________________________________
+
+Lo que aprendimos en esta aula:
+
+Cómo identificar que tipo de clase está siendo instanciada.
+Proteger nuestro sistema
+Mostrar errores de ejecución para condiciones personalizadas
+Clases abstractas
+Métodos abstractos.
+
+las clases abstractas no se deben instanciar, no se debe acceder, no se puede hacer new. 
+los metodos abstractos Los métodos abstractos deben ser sobreescritos por las clases hijas.
+
+
+Exacto. De esta forma es importante tener claro que no se deben tener métodos abstractos fuera de una clase abstracta.
+
+Las clases abstractas son diseñadas de forma tal que sólo sean extensibles o heredables por otras clases.
+
+
+Exactamente, ellas nos ayudan a crear el esqueleto de funcionamiento de clases que comparten el funcionamiento, de forma que el código sea reutilizable lo más posible.
+
+los errores se escriben en la clase padre abstrata, para el constructor cuando es especificoo de la instancia de clase, y en los metodos para redefinirlos 
+ throw new Error('Debe implementar el metrodo retirar en la cuenta');  
+
+__________________________________________________________
+
+Lo que aprendimos en esta aula:
+
+Repaso de herencia, encapsulamiento y buenas prácticas en el código.
+Polimorfismo
+Métodos estáticos
+Maneras de tratar objetos de diferentes tipos, de forma similar.
+
+se usa la palabra static para funciones estaticas de las que no tenemos que hacer una instancia con un new
+
+El atributo clave es una interfaz, en las diferentes clases.
+
+
+
+
+__________________________________________________________
+
+Lo que aprendimos en esta aula:
+
+Operador in
+Operador instanceOf
+Como validar propiedades y tipos para proteger nuestros sistemas
+Interfaces normalizadas
+Duck Type
+
+El operador in, verifica que funcion, y el instanceof, si esta instaciado el objeto.
+El duck type indica que su actua como pato, es un pato.
+es un concepto de modelo que se aplica a los lenguajes que no son fuertemente tipados. 
+
+
+[00:00] Hola, hemos llegado al final de nuestro curso de JavaScript interfaz y herencia. Hemos hecho un recorrido. Vamos a ver código de todo lo que hemos realizado. Iniciamos con un proyecto que ya estaba ejecutándose que era la gestión de cuentas corrientes de nuestro cliente Banco Popular y le dimos una extensión para gestionar tanto cuentas como clientes y empleados.
+
+[00:30] Inicialmente solo manejaba cuentas corrientes y clientes. Aplicamos el concepto de herencia cuando tomamos nuestra clase cuenta corriente en pantalla y la convertimos en una clase base llamada cuenta. En esta clase base hicimos, primero hablamos del concepto de herencia, donde esa clase base podía extender su funcionalidad en otras clases como cuenta corriente, cuenta de ahorro y cuenta nómina.
+
+[01:01] Hablamos de cómo sobreescribir un método, hablamos de los métodos privados y hablamos de clases abstractas. Allí definimos métodos donde solo está indicado lo que se tiene que hacer pero no está la implementación hecha, como el caso de retirar cuenta que es un método abstracto que se debe implementar en cada una de las clases heredadas.
+
+[01:25] Con esto logramos extender de manera rápida y de manera fácil la gestión de cuentas que ya estaba encapsulada en las clase base donde retirar de cuenta o depósito en cuentas o transferir entre cuentas ya estaba hecho en esa clase base y cualquier clase que extendiera o heredara o se creara a partir de clase cuenta tenía toda esa funcionalidad ya hecha.
+
+[01:50] De esta forma nuestro código quedó reutilizable de la mejor manera posible y su funcionamiento basado en orientación a objetos estaba protegido mediante el encapsulamiento. Más adelante entramos en el concepto de polimorfismo donde hablamos de que un método puede tener diferentes formas y era otra forma o era otra manera de conectar códigos. [02:18] Tenemos dos clases, tenemos la clase empleado, tenemos la clase cliente, que entre sí no estaban relacionadas pero que necesitaban tener un método de autenticación, autenticable, mediante el cual tanto empleado, tanto cliente validaran su clave. Entonces ahí aplicamos el concepto de polimorfismo donde un método con diferentes formas podían conectar el código y esto lo llevamos a nuestra clase estática sistemaAutenticacion.
+
+[02:48] Mediante lo que hicimos, la funcionalidad de autenticar, en este caso yo lo llamé con un término más genérico como usuarios, pues no importaba si era cliente, si era empleado, si era una clase 1, una clase 5, lo importante era que sus métodos se comportaran de una forma y finalizamos hablando del tipado de pato, donde indicamos de que no es necesario que se llame de la forma que definimos.
+
+[03:16] En nuestro caso no había una clase usuario sino que si era autenticable nosotros lo tratábamos como un usuario. Este curso finaliza una serie de tres cursos donde venimos de introducción al lenguaje, donde hablamos conceptos básicos, donde hicimos los primeros pasos. Luego pasamos a la introducción a la orientación a objetos donde iniciamos nuestro proyecto de gestión de cuentas corrientes para Banco Popular.
+
+[03:37] Ahí vimos algunos conceptos, hablamos de método, hablamos de atributo, hablamos de cómo definir esos objetos, y en este curso de interfaz y herencia hacemos énfasis en los conceptos un poco más fuertes, donde hablamos ya entonces importante que se queden con herencia entre clases, clases abstractas polimorfismo.
+
+[03:59] Con eso hemos finalizado nuestro curso y espero que sea de mucha utilidad para ustedes. Muchas gracias.
+
+
+
+__________________________________________________________

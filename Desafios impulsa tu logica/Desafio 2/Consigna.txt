@@ -1,0 +1,1 @@
+Cree una función que imprima el resultado de la multiplicación de dos números.

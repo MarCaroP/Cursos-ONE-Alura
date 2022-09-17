@@ -1,0 +1,111 @@
+Lo que aprendimos en esta aula:
+
+Analizar y separar el layout recibido;
+Utilizar el EMMET para crear bloques de código HTML;
+Utilizar las unidades relativas REM y EM;
+Tipos de imágenes y SVGs.
+
+hearder> otros items > otros items> li+a. de esta manera crea varios elementos anidados, con la ayuda de EMMET
+
+Fuentes: https://fonts.google.com/
+
+    Es importante poner el reset de css antes del link de los demas estilos.
+
+    EM: medida relativa a la etiqueta con mas jerarquia
+    ¡Opción correcta! REM proviene de “Root ephemeral” que en traducción técnica es la “variable de la raíz”, o sea, es una variable en relación de la propiedad font-size de la etiqueta raiz (HTML). EM proviene de “ephemeral” que significa “variable” y es una variable de la propiedad font-size de la etiqueta madre.
+
+    Tipos de imagenes. PNG. poco compacto, mantiene la calidad
+    jpg, muy compacto, menor calidad, 
+    gif, caliad baja, tamaño depende de la calidad de la imagen, uso limitado porque algunos programas no lo soportan 
+    SVG imagenes vectoriales en 2 d, calidad leve, y el tamaño varia. 
+    PNG y svg son los mas utilizados, para usar con el acercameinto es mejor svg, ya que no se pixela. 
+    svg, se usa en logos, iconoes e ilustraciones sencillas. 
+https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web
+________________________________________________________________________________________________
+    Lo que aprendimos en esta aula:
+
+Qué es y para qué sirve mobile-first;
+Cómo funciona el initial-scale dentro del contenido Viewport;
+Cómo declarar y llamar a las variables CSS.
+
+    Para demostrar, aquí están algunas motivaciones de utilizar el desarrollo mobile-first:
+
+        Gran parte de los accesos y ventas son de dispositivos móviles;
+        El diseño es minimalista y simplificado;
+        Enfoque en el contenido.
+        
+    Las motivaciones para utilizar el desarrollo desktop-first:
+
+        La interfaz tiene features más ricas;
+        Mayor capacidad de ejecución de las instrucciones;
+        El producto es optimizado para desktop (ejemplo: Google Docs).
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    initial scale se usa para cuando se va cambiando el tamaño de la pagina, si ponemos 1.0 se ve el 100% de la pagina, si por ejemplo se usa el 0.5, se el 50% de la pagina. 
+
+    --variable: valor. dentro del css llamamos a :root en lugar de llamar a todo el css
+    Declarar dentro de algún selector (que se logra ser el :root{}) escribiendo el --nombre-de-la-variable: valor y llamar las variables según la sintaxis, utilizando una función var con el nombre de la variable dentro de esa función.
+
+
+Opción correcta porque precisamos declarar variables CSS dentro de algún selector. Y para utilizar esas variables necesitamos seguir la sintaxis var(--nombre-de-la-variable).
+
+________________________________________________________________________________________________
+Lo que aprendimos en esta aula:
+
+Utilizar las unidades de viewport;
+Identificar la diferencia entre las unidades absolutas y relativas;
+Analizar las limitaciones físicas de los dispositivos.
+Para más informaciones sobre las unidades EM y REM, puedes leer el artículo Guia de unidades en CSS en nuestro blog.
+
+    https://www.aluracursos.com/blog/guia-de-unidades-en-css
+ las limitaciones en los moviles   
+    -  El espacio entre los logos o iamgenes en los moviles
+    - tiene que ver con el toque de pantalla para los botones. el tamaño debe ser adecuado. 
+    - la red de internet, la señal que baja en algunos lugares, para cargar el sitio web o las app.     
+
+
+
+_____________________________________________________________________________
+
+Lo que aprendimos en esta aula:
+
+Cómo trabajar con las imágenes del layout;
+Tags y los atributos que tienen más funciones de semántica de qué estilo;
+La importancia de escribir un código semántico.
+
+Para que otras personas desarrolladoras puedan entender.
+
+
+¡Opción correcta! Debemos recordar que nuestro código tal vez necesite pasar a otras personas y ellas necesitan entender lo que sucede en nuestro código cuando tengan que leerlo.
+
+Para atender a los requisitos de accesibilidad.
+
+
+¡Opción correcta! Debemos dejar nuestra página lo más inclusiva y para eso precisamos utilizar todas las etiquetas correctas para demarcar todo el contenido de la página web.
+
+Para herramientas de indexación.
+
+
+¡Opción correcta! Hay muchos bots (herramientas automáticas) que verifican todo el código de nuestro proyecto, después hacen una validación para cambiar el posicionamiento de nuestra página en los resultados de motores de búsqueda (ejemplo: Google, Bing, Yahoo).
+
+
+
+_____________________________________________________________________________
+Lo que aprendimos en esta aula:
+
+Crear estilos diferentes para diversos dispositivos con media queries;
+Adaptar la estructura y el contenido para diseños/layouts diferentes;
+Progredir de un diseño mobile hasta un diseño para desktop.
+
+
+https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+
+
+
+_____________________________________________________________________________
+
+
+_____________________________________________________________________________
+
+
+
