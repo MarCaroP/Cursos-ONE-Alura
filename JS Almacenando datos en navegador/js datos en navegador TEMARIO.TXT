@@ -39,10 +39,16 @@ localStorage.setItem('tasks', JSON.stringify (datos))
 
 se usa: 
 || en caso de que sea null darle formato, en este ejemplo del practico un arreglo. 
+Durante el curso utilizamos pipe || para crear una nueva evaluación de cortocircuito( short circuit evaluation).
+const tasks = JSON.parse(localStorage.getItem('tasks')) || [ ]
+Con eso, le decimos a la aplicación que en caso de que localStorage este con datos se comporte de una manera, si en caso contrario estuviera vacío, la constante tasks empezaría como un arreglo vacío. Las expresiones lógicas son evaluadas de izquierda a derecha, luego, si la primera declaración sea verdadera se ejecuta normalmente y la segunda declaración no es aplicada, y si el primer es evaluado como falso, ejecutamos el segundo caso.
+
 ________________________________________________
 Lo que aprendimos en esta aula:
 
 Recorrer el arreglo con forEach() de las tareas guardadas en LocalStorage
 Utilizar pipe
 Convertir las tareas almacenadas en formato string a objetos con JSON.parse()
+
+
 ________________________________________________
