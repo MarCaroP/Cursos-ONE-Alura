@@ -1,0 +1,57 @@
+En la clase introductoria ya hemos aprendido varios temas fundamentales sobre Java.
+
+Hablamos sobre las principales características de Java como:
+
+Orientado a objetos.
+Parecido a C++.
+Muchas librerías y una gran comunidad.
+Además de eso, aprendimos:
+
+La diferencia entre código fuente y Bytecode.
+Para ejecutar el Bytecode necesitamos tener la máquina virtual de Java.
+El Bytecode es independiente del sistema operativo.
+Vimos también los principales componentes de la plataforma Java, que son:
+
+Java Virtual Machine (JVM).
+Lenguaje Java.
+Librerias Java (API).
+En la próxima clase vamos a escribir nuestro primer código en Java. ¡Continuemos!
+
+***
+¿Cuál es el mayor beneficio de la máquina virtual de Java (JVM)?
+
+Alternativa correta
+Ejecutar el código independientemente del sistema operativo
+
+
+Correcto, en el mundo Java siempre tendremos el mismo archivo "ejecutable" (Bytecode) que será ejecutado por la máquina virtual de Java (JVM) independientemente del sistema operativo estemos usando. De esta forma, no es necesario reescribir el código o adaptarlo a cada sistema operativo. ¡Tenemos un único ejecutable para todas las plataformas!
+****
+Dependiendo del lenguaje de programación, existen varios tipos de sistemas que puedes desarrollar, como por ejemplo:
+
+Sistemas web (Web sites, aplicaciones web)
+Sistemas solo server side (backend)
+Aplicaciones Android
+Applets para navegadores web
+¿Qué tipos de sistemas se pueden desarrollar utilizando Java?
+Todas
+
+
+¡Correcto! Ya sean aplicaciones web o completamente backend, Android o un viejo applet, Java abarca todos esos campos. Sin embargo, son las aplicaciones web y Android las que tuvieron mayor éxito en el mundo y con más oferta de trabajo para desarrolladores.
+****
+¿Cuál es la diferencia entre archivos ejecutables de Windows (.exe) y archivos ejecutables de Java (Bytecode)?:
+
+Alternativa correta
+Los ejecutables de Windows pueden correr directamente en el sistema operativo, los de Java necesitan de la máquina virtual
+
+
+¡Correcto! Los programas escritos en Java necesitan de la máquina virtual para ser ejecutados.
+Los archivos ejecutables de Java son portátiles, los de Windows no
+
+
+¡Correcto! Recuerda que la palabra "portátil" se refiere a que el mismo archivo puede ser ejecutado en varios sistemas operativos (Windows, Linux, Mac, etc.).
+
+
+
+Ya hemos hablado que Bytecode es un código de máquina similar a Assembly. Tal vez encontraste extraño el nombre Bytecode (yo también), sin embargo, tiene una explicación muy simple: existe un conjunto de comandos que la máquina virtual de Java entiende, esos comandos son también llamados opcodes (operation code) y cada opcode posee exactamente 1 Byte de tamaño. Entonces, tenemos un opcode de 1 Byte, o más simple, Bytecode.
+
+_________________________________________________________________________________
