@@ -1,0 +1,280 @@
+Lo que aprendimos en esta aula:
+
+Regex, o expresiones regulares es un lenguaje para encontrar patrones de texto.
+Ya que es un lenguaje independiente, existen interpretadores para la mayoría de las plataformas de desarrollo, como JavaScript, C#, Python o Ruby.
+Una clase de caracteres predefinida \d, lo que significa cualquier dígito.
+Existen quantifiers que definen cuántas veces un carácter debe de aparecer:
+{1} es un quantifier que significa una vez
+* es un quantifier que significa zero, una o más veces
+. es un meta-char que significa cualquier char.
+Con \podemos escapar meta-chars, por ejemplo /.
+
+Es un software para interpretar y aplicar Regex.
+
+
+¡Alternativa correcta! Una expresión regular sola es apenas una string. Es necesario tener un software para interpretar la regex y aplicarla en su blanco. Ese software es el Regex Engine, que existe para la mayoría de las plataformas de desarrollo, como JavaScript, C#, Python, Ruby o PHP.
+
+
+En la clase y en los últimos ejercicios hemos visto algunos ejemplos de expresiones regulares. Evalúe las opciones que siguen:
+todas son correctas
+A) Extrayendo secciones específicas de un archivo de texto
+B) Validación de formatación de, por ejemplo, correo o teléfono
+C) Análisis de archivos de texto y extracción de datos para, por ejemplo, guardarlos en la base de datos
+D) Sustituyendo valores de un texto para limpiar, formatear o alterar el contenido
+
+
+_____________________________________________
+
+
+? cero o una vez
++ una o mas veces
+* cero o mas veces
+{n}  exactamente n veces
+{n, }al menos n veces
+{n,m} al menos n veces y maximo m veces
+
+
+___________________________________________
+
+Lo que aprendimos en esta aula:
+
+Existen anclas predefinidas que seleccionan una posición dentro de la string.
+\b es un ancla que selecciona un word boundary, eso es el inicio o fin de la palabra.
+^ es un ancla que selecciona el inicio de la string.
+$ es un ancla que selecciona el fin de una string.
+
+ La regex para agarrar la fecha es muy simple, ustedes ya la conocen [0-9]{2}\/[0-9]{2}\/[0-9]{4}. Pero también queremos la expresión Fecha: y un espacio en blanco (por ejemplo: \s) entre ellos, que es opcional, o sea, tenemos que utilizar el signo de interrogación (?). Además, queremos exactamente esa string, por eso necesitamos poner las anclas (^) y ($) al principio y al final de la string, respectivamente: ^Fecha:[\s]?[0-9]{2}\/[0-9]{2}\/[0-9]{4}$
+
+ Vimos en la clase el ancla \b (word boundary) para seleccionar la posición antes o después de una palabra.
+
+Existe también el non-word-boundary: \B (B mayúscula)
+
+Puedes utilizar nuestro probador para entenderlo mejor en la práctica:
+
+String:español proporcional compor
+
+Pattern: \Bpor\B
+Nuestra regex selecciona la sílaba por, y antes y después de ella debe de haber un Non-word-boundary. En otras palabras, la sílaba por debe aparecer dentro de una palabra, nunca al principio o al fin.
+
+
+
+_______________________________________
+
+Lo que aprendimos en esta aula:
+
+Declara grupo ( ).
+Podemos tener grupos y subgrupos.
+Un grupo es retornado al momento ejecutar, lo que nos ayuda a seleccionar una parte del match.
+A través de ?: decimos que no queremos ver ese grupo en la respuesta.
+-----
+
+Cuidado para no confundir non-capturing groups con los quantifier. Ambos utilizan el mismo simbolo (?), entretanto poseen objetivos diferentes. Recordando:
+
+Non-Capturing group - (?:de\s+) (no debe regresarnos el grupo formado por la preposición de y por un \s).
+
+Quantifier - [a-z]? (la clases debe ocurrir cero oo una vez).
+
+Ninguna aplicación es perfecta y las excepciones suelen pasar. Normalmente las excepciones son guardadas dentro de un archivo log. Una tarea común es analizar y verificar los archivos de log para descubrir los posibles problemas en el sistema.
+
+Una excepción en el archivo log es así:
+
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failureCOPIA EL CÓDIGO
+Queremos usar una Regex que pueda encontrar esa línea y separarla en dos grupos, Causa y Descripción para simplificar la lectura:
+
+Causa:
+
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsExceptionCOPIA EL CÓDIGO
+Descripción:
+
+Communications link failureCOPIA EL CÓDIGO
+¿Cuál seria la regex usada para que tengamos acceso a las dos partes de toda la exception?
+
+
+La validación de un correo es uno de los ejemplos clásicos sobre expresiones regulares, por eso insistimos en estos ejercicios.
+
+Necesitamos ayudar al equipo de desarrollo de Alura una vez más, pero ahora para validar cualquier correo. Siguen algunos tips:
+
+Puedes utilizar algo de tu regex anterior
+Usa los anclas ^ y $
+Analiza parte por parte
+Primero enfoca en la parte antes del @
+Después en el domínio, después del @
+Puedes repetir un grupo
+Por ejemplo, (([a-z]+)\.)+ significa varios caracteres en minúsculas seguido por un punto, una o más veces.
+Sigue algunos correos que debes de encontrar con la regex:
+
+donkey.kong@kart.com.br
+bowser1@games.info 
+super-mario@nintendo.JP
+TEAM.donkey-kong@MARIO.kart1.nintendo.comCOPIA EL CÓDIGO
+Y algunos que no:
+
+toad@kart...com
+wario@kart@nintendo.com
+yoshi@nintendo
+daisy@nintendo.b
+..@email.comCOPIA EL CÓDIGO
+¡Manos a la obra!
+
+Sigue una posible regex (y bien compleja):
+
+^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$COPIA EL CÓDIGO
+Vamos a ver parte por parte:
+
+La regex contiene anclas en el inicio ^ y al final $ para garantizar todo el match;
+Antes del @ tenemos ^([\w-]\.?)+
+Definimos una clase con word chars y guión, seguido por un punto opcional:[\w-]\.?
+Después del @ tenemos:
+([\w-]+\.)+ que es muy parecido con lo que viene antes del @, pero el . es obligatorio
+([A-Za-z]{2,4})+$ que está al final, selecciona el dominio del correo, como mx, com, br. Lo mínimo de letras en esta parte deben de ser 2 y máximo 4.
+Hay varios ejemplos complejos disponibles en la internet, pero recuerda que la autenticidad de un correo electrónico solo puede ser verificada enviando un mensaje para el usuario.
+
+_______________________________________
+
+Vimos en la clase cómo seleccionar una tag específica dentro de una string y llegamos a la siguiente regex:
+
+<h1.+?>([\w\sõãí.]+)</h1>COPIA EL CÓDIGO
+Con esta regex también encontramos la tag <h1>, y el grupo nos regresa el contenido de la tag. Repara que dejamos el quantifier perezoso para no regresar toda la tag.
+
+Por ejemplo la regex <h1.+> selecciona la tag intera.
+
+Pero si utilizamos el quantifier perezosamente seleccionamos solamente la tag de apertura:
+
+<h1.+?>COPIA EL CÓDIGO
+Hay una alternativa para resolver ese problema de apertura de la tag. Podemos definir una clase de caracteres que selecciona todo lo que no sea un >. Esa negación es hecha a través de la meta char ^.
+
+Prueba el ejemplo abajo sin utilizar el quantifier perezoso:
+
+<h1[^>]+>COPIA EL CÓDIGO
+Repara que usamos la clase en conjunto con el quantifier codiciosos: [^>]+.
+
+Aún así encontramos solamente la apertura de la tag ya que nuestra clase de carácter no incluye el carácter >.
+
+Esa negación es algo muy común en las regexes. Hay circunstancias en las cuales es más fácil definir lo que no queremos al invés de lo que queremos. La negación ^ nos ayuda en eso. Esa también es la razón de la existencia de clases como \W (con W mayúscula) y \D (con D mayúscula).
+
+El \W es la non-word char, o sea, todo lo que no es un word char. \W es un atajo para [^\w].
+
+La clase \D, por su vez, es un non-digit, o sea, \D es un atajo para [^\d].
+
+Repara también que no usamos la tema char ^ como ancla* ya que no aparece dentro de una clase [^>].
+
+_______________________________________
+Lo que aprendimos en esta aula:
+
+Aprendimos que los quantifiers son codiciosos por patrón y que podemos utilizar un ? después del quantifier, dejándolo perezoso.
+También aprendimos cómo podemos referirnos al texto de un grupo dentro de la regex, donde n es el número del grupo.
+
+_______________________________________
+
+Llegó el momento de practicar lo que aprendimos en este curso. En el caso de JavaScript, podemos usar la propia consola del navegador para probar nuestras expresiones.
+
+Abre la consola y declara la siguiente variable:
+
+var target = "11a22b33c";COPIA EL CÓDIGO
+Declaramos la variable target que es el blando, o sea, el contenido en el cual aplicaremos la expresión regular que vimos en el video.
+
+En JavaScript, podemos declarar una expresión regular de dos maneras. La primera forma consiste en crear una instancia de RegExp.
+
+La declara en tu consola:
+
+var exp = new RegExp('(\\d\\d)(\\w)', 'g');COPIA EL CÓDIGO
+Repara que RegExp recibe una string, pero lo que la hace verbosa es que necesitamos escapar cada \ poniendo una diagonal extra. Además, el segundo parámetro indica que queremos todas las ocurrencias encontradas de nuestra expresión, no solamente la primera.
+
+Podemos usar la forma literal, menos verbosa, poniendo nuestra expresión entre /:
+
+exp = /(\d\d)(\w)/g;COPIA EL CÓDIGO
+Repara que de esta forma no es necesario poner, por ejemplo, \\d, solamente \d y tampoco \\w, solamente \w. ¿Y para probar nuestra expresión?
+
+exp.test(target);COPIA EL CÓDIGO
+Repara que una expresión regular creada posee el método test que recibe el blanco en el cual será aplicada. Ella retornará true solamente si el blanco sigue el patrón de la expresión.
+
+Genial, ¿pero y si queremos obtener como resultado las partes del blanco, que atienden a nuestra expresión regular? En este caso, usamos el método exec:
+
+exp.exec(target);COPIA EL CÓDIGO
+Ella nos imprimirá:
+
+["11a", "11", "a"]COPIA EL CÓDIGO
+Es un arreglo en el cual el primer ítem es el match, o sea, la parte de nuestro blanco que se iguala a nuestra expresión. Entretanto, necesitamos ejecutar otra vez nuestra expresión para que encuentre el próximo match. Necesitamos hacerlo hasta que el resultado final sea null, o sea, cuando ya no haya otro match:
+
+exp.exec(target);
+    ["22b", "22", "b"]
+exp.exec(target);
+    ["33c", "33", "c"]
+exp.exec(target);
+    null    COPIA EL CÓDIGO
+Excelente. Ahora debes estar preguntándote qué son los otros dos elementos del arreglo. El primero ya sabemos que es la parte del blanco que atiende a nuestra expresión regular. Los demás parámetros son equivalentes al patrón que ponemos para cada ( ) de nuestra expresión. Usamos dos ( ), si tuviésemos usando cinco, tendríamos cinco ítems.
+
+Tenemos la siguiente string en JavaScript:
+
+var añoMesDia = '2007-12-31';COPIA EL CÓDIGO
+Nuestra misión es cambiar todos los guiones por una /. String´s en JavaScript son objetos y poseen métodos especiales que aceptan expresiones regulares, como es el caso del método replace. Primero, vamos a crear la expresión que encuentra todos los guiones de una string, incluso vamos a usar la forma literal de declaración:
+
+var exp = /-/gCOPIA EL CÓDIGO
+Ahora, podemos pasar al método replace de la string nuestra expresión. El método replace recibe una expresión regular como primer parámetro, y como segundo, el nuevo texto que debe de sustituir todos los lugares que condicen con la expresión pasada. Tenemos:
+
+añoMesDia = añoMesDia.replace(exp, '/');COPIA EL CÓDIGO
+Si imprimimos el valor de añoMesDia en la consola del browser, tenemos como resultado: '2007/12/31';
+
+¡Perfecto! Pero ojo, si te olvidas de poner el g en la expresión, será cambiado solamente el primer guión.
+
+---------------
+Recibimos de un cliente un archivo que, según él, era para ser un CSV (valores separados por coma). Entretanto, como nada es perfecto, podemos ver que ya en la primera línea fueron utilizadas comas, guión y puntos.
+
+Declara la siguiente string:
+
+var arquivo = '100,200-150,200;20';COPIA EL CÓDIGO
+Necesitamos extraer todos los valores de esta string para al fin sumarlos. Para tareas como esa, hay el método split que todo objeto String posee. Podemos pasar un separador que se encargará de crear un arreglo con cada ítem considerando el separador utilizado. Contudo, tenemos un problema con esa estructura. Veamos el resultado del split:
+
+var valores = arquivo.split(',');COPIA EL CÓDIGO
+Cuando imprimimos el valor en la consola tenemos:
+
+["100", "200-150", "200;20"]COPIA EL CÓDIGO
+Seguro no es eso que queremos, queremos cada valor en una posición del arreglo. ¿Y ahora? La buena noticia es que la función split puede recibir una expresión regular como criterio. Vamos a crear una que haga lo que queremos:
+
+var exp = /[,;-]/;COPIA EL CÓDIGO
+Ahora vamos a pasar nuestra expresión al split:
+
+var exp = /[,;-]/;
+var valores = arquivo.split(exp);COPIA EL CÓDIGO
+Cuando imprimimos los valores en la consola tenemos:
+
+["100", "200", "150", "200", "20"]COPIA EL CÓDIGO
+Excelente. Ahora el desarrollador puede iterar por la lista, convirtiendo los valores de string a number y sumarlos.
+
+----------------
+
+Veamos la siguiente string:
+
+var codigos = 'A121B12112C12212F12G01';COPIA EL CÓDIGO
+La variable codigos guarda una string con varios códigos concatenados. La ley de formación es la siguiente: todo código empieza con una letra seguida de 1 o más dígitos. Necesitamos extraer esas strings en un arreglo, o sea, una lista de código para que el desarrollador pueda verificar si cada uno de esos códigos existe en el sistema.
+
+Una expresión regular que podemos usar para seleccionar el código es la siguiente:
+
+var exp = /[A-Za-z]\d+/gCOPIA EL CÓDIGO
+¿Y ahora? ¿Cómo extraer para un arreglo quien sigue ese patrón? Toda string en JavaScript posee el método match. Este método acepta una expresión regular y regresa un arreglo con todas las partes del blanco que atienden la expresión regular. Usando match:
+
+var codigosExtraidos = codigos.match(exp);COPIA EL CÓDIGO
+Imprimiendo codigosExtraidos tenemos:
+
+["A121", "B12112", "C12212", "F12", "G01"]
+
+-----------------
+
+Existen varias herramientas sofisticadas en la web que puedes utilizar para escribir y analizar tu regex. Esas herramientas son más complejas que nuestro `”probador” y te regalan más informaciones sobre las regex creadas. Siguen algunos links:
+
+https://regexr.com/
+https://regex101.com/
+¡Vale la pena checarlos!
+
+_______________________________________
+
+
+
+_______________________________________
+
+
+
+
+
+
+___________________________________________
